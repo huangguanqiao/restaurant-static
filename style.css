@@ -1,0 +1,143 @@
+/*
+CSS File
+Developed by Guanqiao Huang
+*/
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    font-size:  20px;
+    margin: 25px;
+    background-image: url('images/bg.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu ul{
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background: #ffc600;
+    
+}
+
+.slides-box{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "slide slide price-1"
+    "slide slide price-2"
+}
+
+.slide{
+    grid-area: slide;
+    min-height: 350px;
+    background-image: url(images/taco.jpg);
+    background-size: cover;
+    background-position:bottom;
+    margin:10px;
+
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    ". . "
+    "slide-h1 . "
+    "slide-p . "
+    ". . "
+}
+
+.slide h1{
+    grid-area:slide-h1;
+    background-color: #ffc600;
+    padding:10px;
+    margin-left: 20px;
+}
+
+.slide p{
+    grid-area:slide-p;
+    background-color: #ffc600;
+    padding:10px;
+    margin-left: 20px;
+}
+
+
+.price-1{
+    grid-area: price-1;
+    background-color: #ffc600;
+    padding: 10px;
+    margin: 10px;
+}
+
+.price-2{
+    grid-area: price-2;
+    background-color: #ffc600;
+    padding: 10px;
+    margin: 10px;
+}
+
+.price-box p{
+  text-align: center;
+}
+
+#price{
+    font-size: 60px;
+}
+
+.feature{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 10px;
+}
+
+.feature-small{
+    background: white;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px  rgba(0,0,0,0.1);
+}
+
+.feature-large{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    background: white;
+    padding:50px;
+    margin: 10px;
+}
+
+button{
+    padding: 10px;
+    background-color: #ffc600;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;  
+    margin: 10px;
+}
+
+.gallery img {
+    width: 100%;
+  }
+
+.gallery h2 {
+    grid-column: 1 / -1;
+    grid-gap: 20px;
+    text-align: center;
+}
+  
