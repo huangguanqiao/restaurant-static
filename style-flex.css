@@ -1,0 +1,156 @@
+/*
+CSS File
+Developed by Guanqiao Huang
+
+This is a flex version of the assessment
+Flexbox was used in this version
+*/
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    font-size: 20px;
+    margin: 25px;
+    background-image: url('images/bg.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 0;
+}
+
+#menu-list li{
+    flex: 1 1 auto;
+    background-color: #ffc600;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    list-style: none;
+}
+
+#menu-list > li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.slides-box{
+    /* background-color: white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.slide{
+    background-image: url(images/taco.jpg);
+    margin: 10px;
+    flex:3;
+    min-height:500px;
+    background-size: cover;
+    background-position:bottom;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.slide h1{
+    display:inline-block;
+    background-color: #ffc600;
+    padding:10px;
+    margin: 20px;
+}
+
+.slide p{
+    display:inline;
+    background-color: #ffc600;
+    padding:10px;
+    margin: 20px;
+    
+}
+
+
+.price-box{
+    /*background-color:yellow;*/
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.price-1{
+    background-color:#ffc600;
+    min-height:220px;
+    margin: 10px;
+    flex:1;
+}
+
+.price-2{
+    background-color:#ffc600;
+    min-height:220px;
+    margin: 10px;
+    flex:1;
+}
+
+#price{
+    font-size: 60px;
+}
+
+.price-box p{
+    text-align: center;
+  }
+
+.feature{
+    display: flex;
+}
+
+.feature-small{
+    background-color: white;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px  rgba(0,0,0,0.1);
+    margin: 10px;
+}
+
+.feature-large{
+    background-color: white;
+    display: flex;
+    padding:50px;
+    margin: 10px;
+}
+
+button{
+    padding: 10px;
+    background-color: #ffc600;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.gallery h2{
+    flex: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.gallery-images{
+    flex:1 1 auto;
+}
+
+.gallery-images img{
+    margin: 10px;
+}
